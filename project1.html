@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project One - Your Name</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Your Name</a>
+            <a class="btn btn-outline-light" href="index.html#projects">Back to All Projects</a>
+        </div>
+    </nav>
+
+    <!-- Project Section -->
+    <section class="py-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Project Title -->
+                    <h1 class="display-4">Project One</h1>
+                    <p class="lead text-muted">A deep dive into the architecture and impact of this project.</p>
+                    <hr class="my-4">
+
+                    <!-- Project Image/Carousel -->
+                    <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <svg class="d-block w-100" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Project Screenshot 1" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Project Screenshot 1</text></svg>
+                            </div>
+                            <div class="carousel-item">
+                                <svg class="d-block w-100" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Project Screenshot 2" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Project Screenshot 2</text></svg>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <!-- Project Overview -->
+                    <h3 class="mb-3">Project Overview</h3>
+                    <p>This is where you provide a detailed overview of the project. Discuss the problem you were trying to solve, your role in the project, and the process you followed. Talk about the challenges you faced and how you overcame them. The goal is to give a comprehensive understanding of what the project is about and what you accomplished.</p>
+                    <p>You can break this down into multiple paragraphs to make it easier to read. Use this space to really shine a light on your skills in problem-solving, project management, and execution.</p>
+
+                    <!-- Technologies Used -->
+                    <h3 class="mt-5 mb-3">Technologies Used</h3>
+                    <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                    <span class="badge bg-primary me-2 mb-2">CSS3</span>
+                    <span class="badge bg-primary me-2 mb-2">JavaScript</span>
+                    <span class="badge bg-secondary me-2 mb-2">Backend Framework</span>
+                    <span class="badge bg-secondary me-2 mb-2">Database</span>
+
+                    <!-- Project Links -->
+                    <div class="mt-5 text-center">
+                        <a href="#" class="btn btn-lg btn-primary me-3">View Live Project</a>
+                        <a href="#" class="btn btn-lg btn-outline-secondary">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">Copyright &copy; <span id="year"></span> Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

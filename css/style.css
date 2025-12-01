@@ -1,0 +1,20 @@
+/* Custom CSS for your portfolio */
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add padding to sections to account for the fixed navbar */
+section {
+    padding-top: 56px; /* Height of the navbar */
+}
+
+/* Adjust padding for the home section to keep it centered */
+#home {
+    padding-top: 0;
+}
+
+.card-img-top {
+    border-bottom: 1px solid #dee2e6;
+}
