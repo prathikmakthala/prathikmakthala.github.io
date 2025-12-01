@@ -1,17 +1,17 @@
-/* --- Global Styles & Dark Theme --- */
+/* --- Global Styles & Light Theme --- */
 :root {
-    --primary-color: #007bff; /* A bright accent color */
+    --primary-color: #007bff;
     --primary-hover-color: #0056b3;
-    --background-dark: #121212;
-    --background-light: #1e1e1e;
-    --text-primary: #ffffff;
-    --text-secondary: #adb5bd;
-    --border-color: #343a40;
+    --background-light: #ffffff;
+    --background-secondary: #f8f9fa;
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --border-color: #dee2e6;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--background-dark);
+    background-color: var(--background-light);
     color: var(--text-primary);
 }
 
@@ -26,11 +26,11 @@ p {
 
 section {
     padding: 80px 0;
-    overflow: hidden; /* For animations */
+    overflow: hidden;
 }
 
 .bg-light {
-    background-color: var(--background-light) !important;
+    background-color: var(--background-secondary) !important;
 }
 
 .display-4 {
@@ -41,9 +41,9 @@ section {
 
 /* --- Navbar --- */
 #navbar {
-    background-color: rgba(30, 30, 30, 0.85) !important;
+    background-color: rgba(255, 255, 255, 0.85) !important;
     backdrop-filter: blur(10px);
-    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .navbar-brand, .nav-link {
@@ -63,8 +63,8 @@ section {
 
 /* --- Hero Section --- */
 #home {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png');
-    background-size: cover;
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
 }
 
 #home .display-1 {
@@ -75,6 +75,7 @@ section {
 #home .lead {
     font-weight: 300;
     font-size: 1.5rem;
+    color: var(--text-secondary);
 }
 
 
@@ -97,8 +98,8 @@ section {
 }
 
 .btn-outline-secondary:hover {
-    background-color: var(--text-secondary);
-    color: var(--background-dark);
+    background-color: var(--text-primary);
+    color: var(--background-light);
 }
 
 
@@ -112,8 +113,7 @@ section {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.1);
-    border-color: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .card-title {
@@ -122,7 +122,7 @@ section {
 
 .card .text-muted {
     color: var(--text-secondary) !important;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 
@@ -139,6 +139,7 @@ section {
 
 /* --- Contact Section --- */
 #contact .bi {
+    color: var(--text-primary);
     transition: color 0.3s ease;
 }
 
