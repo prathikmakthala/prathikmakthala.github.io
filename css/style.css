@@ -69,6 +69,12 @@ section {
 
 #home .display-1 {
     font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#home .lead {
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 
@@ -112,6 +118,11 @@ section {
 
 .card-title {
     color: var(--text-primary);
+}
+
+.card .text-muted {
+    color: var(--text-secondary) !important;
+    opacity: 0.8;
 }
 
 
