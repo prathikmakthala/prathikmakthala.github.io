@@ -3,7 +3,7 @@
     --primary-color: #007bff;
     --primary-hover-color: #0056b3;
     --background-light: #ffffff;
-    --background-secondary: #f8f9fa;
+    --background-secondary: #ffffff; /* Changed to white */
     --text-primary: #212529;
     --text-secondary: #6c757d;
     --border-color: #dee2e6;
