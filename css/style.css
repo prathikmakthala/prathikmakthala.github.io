@@ -1,20 +1,143 @@
-/* Custom CSS for your portfolio */
-
-/* Enable smooth scrolling */
-html {
-    scroll-behavior: smooth;
+/* --- Global Styles & Dark Theme --- */
+:root {
+    --primary-color: #007bff; /* A bright accent color */
+    --primary-hover-color: #0056b3;
+    --background-dark: #121212;
+    --background-light: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #adb5bd;
+    --border-color: #343a40;
 }
 
-/* Add padding to sections to account for the fixed navbar */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+p {
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
 section {
-    padding-top: 56px; /* Height of the navbar */
+    padding: 80px 0;
+    overflow: hidden; /* For animations */
 }
 
-/* Adjust padding for the home section to keep it centered */
+.bg-light {
+    background-color: var(--background-light) !important;
+}
+
+.display-4 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+
+/* --- Navbar --- */
+#navbar {
+    background-color: rgba(30, 30, 30, 0.85) !important;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-primary) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+
+/* --- Hero Section --- */
 #home {
-    padding-top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png');
+    background-size: cover;
 }
 
-.card-img-top {
-    border-bottom: 1px solid #dee2e6;
+#home .display-1 {
+    font-weight: 700;
+}
+
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover-color);
+    border-color: var(--primary-hover-color);
+    transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--text-secondary);
+    color: var(--background-dark);
+}
+
+
+/* --- Cards (Experience & Projects) --- */
+.card {
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.1);
+    border-color: var(--primary-color);
+}
+
+.card-title {
+    color: var(--text-primary);
+}
+
+
+/* --- Tech Stack Section --- */
+#tech-stack h5 {
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-weight: 600;
+}
+#tech-stack p {
+    font-size: 0.9rem;
+}
+
+
+/* --- Contact Section --- */
+#contact .bi {
+    transition: color 0.3s ease;
+}
+
+#contact .bi:hover {
+    color: var(--primary-color) !important;
+}
+
+/* --- Project Pages --- */
+.badge {
+    padding: 0.5em 0.9em;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
