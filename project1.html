@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LLM Fine-Tuning for a Medical Chatbot - Prathik Goud Makthala</title>
+<title>Medical Chatbot Project - Prathik Goud Makthala</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -22,26 +21,47 @@
                 <div class="col-lg-8 mx-auto">
                     <!-- Project Title -->
                     <h1 class="display-4">LLM Fine-Tuning for a Medical Chatbot</h1>
-                    <p class="lead text-muted">A deep dive into the machine learning pipeline for a question-answering AI.</p>
+                    <p class="lead text-muted">A full-stack AI application with a React-based frontend and a fine-tuned T5 language model.</p>
                     <hr class="my-4">
 
                     <!-- Project Image -->
-                    <img src="https://source.unsplash.com/random/1200x800/?medical,ai,technology" class="img-fluid rounded mb-4" alt="Medical AI">
+                    <img src="https://source.unsplash.com/random/1200x800/?medical,ai,chatbot" class="img-fluid rounded mb-4" alt="Medical AI Chatbot">
 
                     <!-- Project Overview -->
                     <h3 class="mb-3">Project Overview</h3>
-                    <p>This project is a complete machine learning pipeline that demonstrates the process of fine-tuning a `google/flan-t5-base` language model for a specialized question-answering task. The goal was to create a model that could form the core of an intelligent medical chatbot.</p>
-                    <p>The process involved several key stages. First, a raw dataset of questions and answers was loaded and meticulously cleaned. The text was then preprocessed using the Natural Language Toolkit (NLTK) for tasks like stopword removal and lemmatization. Following this, exploratory data analysis was performed to understand the characteristics of the dataset. The core of the project involved using the Hugging Face `transformers` library to fine-tune the pre-trained T5 model on the prepared data. Finally, the model's performance was evaluated using the ROUGE metric to measure its ability to generate accurate and relevant answers.</p>
+                    <p>This project is a full-stack, AI-driven application featuring an intelligent medical chatbot. It consists of two main components: a sophisticated machine learning pipeline for model fine-tuning, and a modern, responsive frontend for user interaction.</p>
+                    <p>The core of the application is a `google/flan-t5-base` language model, which was fine-tuned on a specialized question-answering dataset to become an expert in medical inquiries. The user-facing interface is a clean and intuitive chatbot, built with **React**, allowing users to interact with the powerful fine-tuned model in real-time.</p>
+
+                    <!-- Key Features -->
+                    <h3 class="mt-5 mb-3">Key Features & Pipeline Stages</h3>
+                    <ul>
+                        <li>**Frontend:** A responsive and user-friendly chatbot interface built with React.</li>
+                        <li>**Data Processing:** A robust pipeline using Pandas and NLTK for cleaning, preprocessing, and lemmatizing text data.</li>
+                        <li>**Model Fine-Tuning:** The T5 model was fine-tuned using the Hugging Face `transformers` and `datasets` libraries on a PyTorch backend.</li>
+                        <li>**Evaluation:** The model's performance and accuracy were measured using the ROUGE metric.</li>
+                        <li>**Full-Stack Integration:** The project demonstrates the end-to-end process of training a specialized language model and creating an interface to serve it to users.</li>
+                    </ul>
 
                     <!-- Technologies Used -->
                     <h3 class="mt-5 mb-3">Technologies Used</h3>
-                    <span class="badge bg-primary me-2 mb-2">Python</span>
-                    <span class="badge bg-primary me-2 mb-2">Hugging Face Transformers</span>
-                    <span class="badge bg-primary me-2 mb-2">PyTorch</span>
-                    <span class="badge bg-primary me-2 mb-2">Pandas</span>
-                    <span class="badge bg-secondary me-2 mb-2">NLTK</span>
-                    <span class="badge bg-secondary me-2 mb-2">Scikit-learn</span>
-                    <span class="badge bg-secondary me-2 mb-2">Matplotlib</span>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>React.js</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Python</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Hugging Face Transformers</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>PyTorch</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Pandas & NumPy</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>NLTK</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Scikit-learn</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Matplotlib</li>
+                            </ul>
+                        </div>
+                    </div>
 
                     <!-- Project Links -->
                     <div class="mt-5 text-center">
