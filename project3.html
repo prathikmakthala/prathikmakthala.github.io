@@ -36,42 +36,54 @@
                     <hr class="my-4">
 
                     <!-- Project Image -->
-                    <img src="https://source.unsplash.com/random/1200x800/?nature,server,map" class="img-fluid rounded mb-4" alt="Nature Counter Server">
+                    <!-- Image removed as per user request -->
 
                     <!-- Project Overview -->
-                    <h3 class="mb-3">Project Overview</h3>
-                    <p>This project is a high-performance Node.js backend server designed to process and analyze geospatial data to identify and count natural geographical features. It acts as the core server-side component for a nature counting application, providing robust data handling, processing, and reporting capabilities.</p>
-                    <p>The server efficiently queries and utilizes OpenStreetMap (OSM) data via the Overpass API, storing processed information in a MongoDB database. It is built to be scalable and maintain high availability for various client applications.</p>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Project Overview</h3>
+                            <p>This project is a high-performance Node.js backend server designed to process and analyze geospatial data to identify and count natural geographical features. It acts as the core server-side component for a nature counting application, providing robust data handling, processing, and reporting capabilities.</p>
+                            <p>The server efficiently queries and utilizes OpenStreetMap (OSM) data via the Overpass API, storing processed information in a MongoDB database. It is built to be scalable and maintain high availability for various client applications.</p>
+                        </div>
+                    </div>
 
                     <!-- Key Features -->
-                    <h3 class="mt-5 mb-3">Key Features & Components</h3>
-                    <ul>
-                        <li>**Geospatial Data Processing:** Leverages OpenStreetMap (OSM) data and the Overpass API for detailed geographical feature analysis.</li>
-                        <li>**Data Storage:** Persistent data storage using MongoDB, managed through Mongoose ORM.</li>
-                        <li>**Caching:** Integrated Redis for efficient data caching, improving response times and reducing database load.</li>
-                        <li>**Reporting:** Dynamically generates PDF reports from HTML content, providing customizable data summaries.</li>
-                        <li>**Communication:** Sends email notifications using Nodemailer for various system alerts or reports.</li>
-                        <li>**Authentication & Realtime:** Integrates Firebase for robust authentication and potential real-time features.</li>
-                    </ul>
-
-                    <!-- Technologies Used -->
-                    <h3 class="mt-5 mb-3">Technologies Used</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Node.js</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Express.js</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>MongoDB / Mongoose</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Redis</li>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Key Features & Components</h3>
+                            <ul>
+                                <li>**Geospatial Data Processing:** Leverages OpenStreetMap (OSM) data and the Overpass API for detailed geographical feature analysis.</li>
+                                <li>**Data Storage:** Persistent data storage using MongoDB, managed through Mongoose ORM.</li>
+                                <li>**Caching:** Integrated Redis for efficient data caching, improving response times and reducing database load.</li>
+                                <li>**Reporting:** Dynamically generates PDF reports from HTML content, providing customizable data summaries.</li>
+                                <li>**Communication:** Sends email notifications using Nodemailer for various system alerts or reports.</li>
+                                <li>**Authentication & Realtime:** Integrates Firebase for robust authentication and potential real-time features.</li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Overpass API</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Firebase / Firebase Admin</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Nodemailer</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Puppeteer (for PDF)</li>
-                            </ul>
+                    </div>
+
+                    <!-- Technologies Used -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Technologies Used</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Node.js</li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Express.js</li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>MongoDB / Mongoose</li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Redis</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Overpass API</li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Firebase / Firebase Admin</li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Nodemailer</li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Puppeteer (for PDF)</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
